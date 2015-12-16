@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.lcp.bean.User" table="user">
+		<id name="loginId" type="java.lang.String">
+			<column name="loginid" />
+			<generator class="assigned" />
+		</id>
+		<property name="userName" type="java.lang.String">
+			<column name="userName"></column>
+		</property>
+		<property name="passwd" type="java.lang.String">
+			<column name="passwd"></column>
+		</property>
+		<property name="career" type="java.lang.String">
+			<column name="career"></column>
+		</property>
+		<property name="description" type="java.lang.String">
+			<column name="description"></column>
+		</property>
+		<property name="aboutMe" type="java.lang.String">
+			<column name="aboutMe"></column>
+		</property>
+		<property name="netName" type="java.lang.String">
+			<column name="netName"></column>
+		</property>
+		<property name="constellation" type="java.lang.String">
+            <column name="constellation"></column>
+        </property>
+        <property name="addr" type="java.lang.String">
+            <column name="addr"></column>
+        </property>
+        <property name="book" type="java.lang.String">
+            <column name="book"></column>
+        </property>
+        <property name="music" type="java.lang.String">
+            <column name="music"></column>
+        </property>
+        <property name="photo" type="java.lang.String">
+            <column name="photo"></column>
+        </property>
+	</class>
+</hibernate-mapping>

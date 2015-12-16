@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.lcp.bean.Blog" table="blog">
+        <id name="blogId" type="java.lang.Integer">
+            <column name="blogId"/>
+            <generator class="increment"/>
+        </id>
+        <property name="theme" type="java.lang.String">
+            <column name="theme"></column>
+        </property>
+        <property name="date" type="java.util.Date">
+            <column name="date"></column>
+        </property>
+        <property name="content" type="java.lang.String">
+            <column name="content"></column>
+        </property>
+    </class>
+</hibernate-mapping>
