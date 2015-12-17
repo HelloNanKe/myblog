@@ -1,5 +1,7 @@
 package cn.lcp.serviceImpl;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
@@ -27,5 +29,9 @@ public class EssayServiceImpl implements EssayService {
 	@Override
 	public void writeEssay(Blog blog) {
 		this.essayDao.writeEssay(blog);
+	}
+	//查看所有的随笔
+	public List<Blog> getAllEssay(){
+		return this.essayDao.getAllEssay();
 	}
 }

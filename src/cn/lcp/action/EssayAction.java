@@ -1,6 +1,7 @@
 package cn.lcp.action;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
@@ -34,9 +35,10 @@ public class EssayAction extends ActionSupport {
 		this.blog = blog;
 	}
 	
-	HttpSession session = ServletActionContext.getRequest().getSession();
+	
 	//写入随笔
 	public String writeEssay(){
+		HttpSession session = ServletActionContext.getRequest().getSession();
 		String theme = blog.getTheme().trim();
 		String content = blog.getContent().trim();
 		if(theme != null && !theme.equals("")&& content != null && !content.equals("")){
@@ -48,5 +50,13 @@ public class EssayAction extends ActionSupport {
 			ServletActionContext.getRequest().setAttribute("msg", "请正确填写");
 			return ERROR;
 		}
+	}
+	
+	//查看所有的随笔
+	public String getAllEssay(){
+		List<Blog> blog = this.essayService.getAllEssay();
+		HttpSession session = ServletActionContext.getRequest().getSession();
+		session.setAttribute("blog", blog);
+		return SUCCESS;
 	}
 }

@@ -5,10 +5,15 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-    <package name="essay" extends="struts-default">
-        <action name="writeEssay" method="writeEssay" class="cn.lcp.action.EssayAction">
-            <result name="success">/writeEssay.jsp</result>
-            <result name="error">/writeEssay.jsp</result>
-        </action>
-    </package>
+	<package name="essay" extends="struts-default">
+		<!-- 写入随笔 -->
+		<action name="writeEssay" method="writeEssay" class="cn.lcp.action.EssayAction">
+			<result name="success">/writeEssay.jsp</result>
+			<result name="error">/writeEssay.jsp</result>
+		</action>
+		<!-- 查看所有随笔 -->
+		<action name="getAllEssay" method="getAllEssay" class="cn.lcp.action.EssayAction">
+			<result name="success">/home.jsp</result>
+		</action>
+	</package>
 </struts>

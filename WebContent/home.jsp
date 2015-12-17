@@ -6,7 +6,71 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>个人博客</title>
+
 <link href="css/index.css" rel="stylesheet">
+<link href="css/user_info.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/table_2.css" rel="stylesheet" />
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/table.css" />
+<title></title>
+<script type="text/javascript">
+	window.jQuery
+			|| document.write("<script src='js/jquery-2.1.4.min.js'>"
+					+ "<" + "/script>");
+</script>
+<script type="text/javascript">
+	if ("ontouchend" in document)
+		document.write("<script src='js/jquery.mobile.custom.min.js'>"
+				+ "<" + "/script>");
+</script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/jquery.dataTables.bootstrap.js"></script>
+<script type="text/javascript">
+	$(function() {
+		var len = $('tr').length;
+		for (var i = 1; i < len; i++) {
+			$('tr:eq(' + i + ') td:eq(1)').text(i);
+		}
+	});
+	jQuery(function($) {
+		var oTable1 = $('#sample-table-2').dataTable({
+			"aoColumns" : [ {
+				"bSortable" : false
+			}, null, null, null, null, null, {
+				"bSortable" : false
+			} ]
+		});
+		$('table th input:checkbox').on(
+				'click',
+				function() {
+					var that = this;
+					$(this).closest('table').find(
+							'tr > td:first-child input:checkbox').each(
+							function() {
+								this.checked = that.checked;
+								$(this).closest('tr').toggleClass('selected');
+							});
+				});
+		$('[data-rel="tooltip"]').tooltip({
+			placement : tooltip_placement
+		});
+
+		function tooltip_placement(context, source) {
+			var $source = $(source);
+			var $parent = $source.closest('table')
+			var off1 = $parent.offset();
+			var w1 = $parent.width();
+			var off2 = $source.offset();
+			var w2 = $source.width();
+			if (parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2))
+				return 'right';
+			return 'left';
+		}
+	})
+</script>
 <!--[if lt IE 9]>
 <script src="js/html5.js"></script>
 <![endif]-->
@@ -16,7 +80,7 @@
 	<div id="logo">
 		<a href="/"></a>
 	</div>
-	<nav class="topnav" id="topnav"> <a href="home.jsp"><span>首页</span><span
+	<nav class="topnav" id="topnav"> <a href="getAllEssay"><span>首页</span><span
 		class="en">Honme</span></a> <a href="about.jsp"><span>关于我</span><span
 		class="en">About</span></a> </a> <a href="saylist.html"><span>个人日记</span><span
 		class="en">Diary</span></a> <a href="seolist.html"><span>SEO技术</span><span
@@ -43,88 +107,33 @@
 			博主<span>推荐</span>
 		</p>
 	</h2>
+
+
+
 	<div class="bloglist left">
-		<!--wz-->
-		<div class="wz">
-			<h3>关于响应式布局</h3>
-			<p class="dateview">
-				<span>2013-11-04</span><span>作者：<s:property
-						value='#session.user.userName' /></span><span>分类：[<a href="#">web前端</a>]
-				</span>
-			</p>
-			<figure> <img src="images/001.jpg"></figure>
-			<ul>
-				<p>随着互联网的快速发展，以及html5+css3的迅速崛起。渐渐的响应式布局，也会慢慢的出现在我们的视野里，身为专业的web前端，还不学习新技术你就out啦！为什么这样说呢？因为响应式布局能同时兼容多个终端，比如（手机、平板、PC）...</p>
-				<a title="阅读全文" href="/" target="_blank" class="readmore">阅读全文>></a>
-			</ul>
-			<div class="clear"></div>
-		</div>
-		<!--end-->
-		<!--wz-->
-		<div class="wz">
-			<h3>关于响应式布局</h3>
-			<p class="dateview">
-				<span>2013-11-04</span><span>作者：段亮</span><span>分类：[<a
-					href="#">web前端</a>]
-				</span>
-			</p>
-			<figure> <img src="images/001.jpg"></figure>
-			<ul>
-				<p>随着互联网的快速发展，以及html5+css3的迅速崛起。渐渐的响应式布局，也会慢慢的出现在我们的视野里，身为专业的web前端，还不学习新技术你就out啦！为什么这样说呢？因为响应式布局能同时兼容多个终端，比如（手机、平板、PC）...</p>
-				<a title="阅读全文" href="/" target="_blank" class="readmore">阅读全文>></a>
-			</ul>
-			<div class="clear"></div>
-		</div>
-		<!--end-->
-		<!--wz-->
-		<div class="wz">
-			<h3>关于响应式布局</h3>
-			<p class="dateview">
-				<span>2013-11-04</span><span>作者：段亮</span><span>分类：[<a
-					href="#">web前端</a>]
-				</span>
-			</p>
-			<figure> <img src="images/001.jpg"></figure>
-			<ul>
-				<p>随着互联网的快速发展，以及html5+css3的迅速崛起。渐渐的响应式布局，也会慢慢的出现在我们的视野里，身为专业的web前端，还不学习新技术你就out啦！为什么这样说呢？因为响应式布局能同时兼容多个终端，比如（手机、平板、PC）...</p>
-				<a title="阅读全文" href="/" target="_blank" class="readmore">阅读全文>></a>
-			</ul>
-			<div class="clear"></div>
-		</div>
-		<!--end-->
-		<!--wz-->
-		<div class="wz">
-			<h3>关于响应式布局</h3>
-			<p class="dateview">
-				<span>2013-11-04</span><span>作者：段亮</span><span>分类：[<a
-					href="#">web前端</a>]
-				</span>
-			</p>
-			<figure> <img src="images/001.jpg"></figure>
-			<ul>
-				<p>随着互联网的快速发展，以及html5+css3的迅速崛起。渐渐的响应式布局，也会慢慢的出现在我们的视野里，身为专业的web前端，还不学习新技术你就out啦！为什么这样说呢？因为响应式布局能同时兼容多个终端，比如（手机、平板、PC）...</p>
-				<a title="阅读全文" href="/" target="_blank" class="readmore">阅读全文>></a>
-			</ul>
-			<div class="clear"></div>
-		</div>
-		<!--end-->
-		<!--wz-->
-		<div class="wz">
-			<h3>关于响应式布局</h3>
-			<p class="dateview">
-				<span>2013-11-04</span><span>作者：段亮</span><span>分类：[<a
-					href="#">web前端</a>]
-				</span>
-			</p>
-			<figure> <img src="images/001.jpg"></figure>
-			<ul>
-				<p>随着互联网的快速发展，以及html5+css3的迅速崛起。渐渐的响应式布局，也会慢慢的出现在我们的视野里，身为专业的web前端，还不学习新技术你就out啦！为什么这样说呢？因为响应式布局能同时兼容多个终端，比如（手机、平板、PC）...</p>
-				<a title="阅读全文" href="/" target="_blank" class="readmore">阅读全文>></a>
-			</ul>
-			<div class="clear"></div>
-		</div>
-		<!--end-->
+		<s:iterator id="b" value="#session.blog" status="u">
+			<div class="wz">
+				<h3>
+					题目：<s:property value='#b.theme' />
+				</h3>
+				<p class="dateview">
+					<span><s:property value='#b.date' /></span><span>作者：<s:property
+							value='#session.user.userName' /></span><span>
+					</span>
+				</p>
+				
+				<ul>
+					<s:property value='#b.content' escape="false"/>
+					<a title="阅读全文" href="#" target="_blank" class="readmore">阅读全文>></a>
+					<a title="阅读全文" href="#" target="_blank" class="readmore">删除</a>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</s:iterator>
+
 	</div>
+
+
 	<!--right--> <aside class="right">
 	<div class="my">
 		<h2>
@@ -133,9 +142,9 @@
 		<img src="<s:property value="#session.user.photo"/>" height="200px"
 			width="200px" alt="博主">
 		<ul>
-			<li>博主：少年</li>
-			<li>职业:web前端、网站运营</li>
-			<li>简介：一个不断学习和研究，web前端和SEO技术的90后草根站长.</li>
+			<li>博主：<s:property value="#session.user.userName" /></li>
+			<li>职业:<s:property value="#session.user.career" /></li>
+			<li>简介：<s:property value="#session.user.aboutMe" /></li>
 			<li></li>
 		</ul>
 	</div>
@@ -146,50 +155,8 @@
 			class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#"
 			class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#"
 			class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-	</div>
-	<div class="news">
-		<h3 class="ph">
-			<p>
-				点击<span>排行</span>
-			</p>
-		</h3>
-		<ul class="paih">
-			<li><a href="/" title="如何建立个人博客" target="_blank">如何建立个人博客</a></li>
-			<li><a href="/" title="html5标签" target="_blank">html5标签</a></li>
-			<li><a href="/" title="一个网站的开发流程" target="_blank">一个网站的开发流程</a></li>
-			<li><a href="/" title="做网站到底需要什么?" target="_blank">做网站到底需要什么?</a></li>
-			<li><a href="/" title="企业做网站具体流程步骤" target="_blank">企业做网站具体流程步骤</a></li>
-		</ul>
-		<h3>
-			<p>
-				用户<span>关注</span>
-			</p>
-		</h3>
-		<ul class="rank">
-			<li><a href="/" title="如何建立个人博客" target="_blank">如何建立个人博客</a></li>
-			<li><a href="/" title="一个网站的开发流程" target="_blank">一个网站的开发流程</a></li>
-			<li><a href="/" title="关键词排名的三个时期" target="_blank">关键词排名的三个时期</a></li>
-			<li><a href="/" title="做网站到底需要什么?" target="_blank">做网站到底需要什么?</a></li>
-			<li><a href="/" title="关于响应式布局" target="_blank">关于响应式布局</a></li>
-			<li><a href="/" title="html5标签" target="_blank">html5标签</a></li>
-		</ul>
-
-		<h3 class="links">
-			<p>
-				友情<span>链接</span>
-			</p>
-		</h3>
-		<ul class="website">
-			<li><a href="#">个人博客</a></li>
-			<li><a href="wwww.duanliang920.com">段亮博客</a></li>
-		</ul>
 	</div></article>
-	<footer>
-	<p>
-		<span>Design By:<a href="www.duanliang920.com" target="_blank">段亮</a></span><span>网站地图</span><span><a
-			href="/">网站统计</a></span>
-	</p>
-	</footer>
+	<footer> </footer>
 	<script src="js/nav.js"></script>
 	<!--百度分享-->
 	<script>

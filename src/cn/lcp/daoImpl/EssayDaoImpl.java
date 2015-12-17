@@ -1,5 +1,7 @@
 package cn.lcp.daoImpl;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import org.springframework.orm.hibernate3.HibernateTemplate;
@@ -20,5 +22,10 @@ public class EssayDaoImpl implements EssayDao{
 	@Override
 	public void writeEssay(Blog blog) {
 		this.hibernateTemplate.save(blog);
+	}
+	
+	//查看所有的随笔
+	public List<Blog> getAllEssay(){
+		return this.hibernateTemplate.find("from Blog");
 	}
 }

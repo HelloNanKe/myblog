@@ -36,7 +36,8 @@
 	<div class="about left">
 		<h2>About me</h2>
 		<div id="me_text">
-			<form action="modifyAbout" method="post" enctype="multipart/form-data">
+			<form action="modifyAbout" method="post"
+				enctype="multipart/form-data">
 				<table cellpadding="0" cellspacing="0">
 					<caption>
 						<label style="color: #ac2925">${msg}</label>
@@ -46,7 +47,7 @@
 						<th width="80" height="55">用户名：</th>
 						<td width="220"><input type="text" class="find-text"
 							name="user.userName"
-							value=<s:property value="#session.user.userName"/>></td>
+							value=<s:property value="#session.user.userName"/> readonly></td>
 						<th width="80">密码：</th>
 						<td width="220"><input type="password" class="find-text"
 							name="user.passwd"
@@ -79,18 +80,20 @@
 						<td width="220"><input type="text" class="find-text"
 							name="user.music" value=<s:property value="#session.user.music"/>></td>
 					</tr>
-					
+
 					<tr>
 						<th colspan="1" width="30" height="50">简介：</th>
-						<td colspan="4"><div style="width:500px;height:200px">
-								<textarea class="find-textarea" name="user.description" style="width:500px;height:180px"><s:property
+						<td colspan="4"><div style="width: 500px; height: 200px">
+								<textarea class="find-textarea" name="user.description"
+									style="width: 500px; height: 180px"><s:property
 										value="#session.user.description" /> </textarea>
 							</div></td>
 					</tr>
 					<tr>
 						<th colspan="1" width="30" height="50">关于我：</th>
-						<td colspan="4"><div style="width:500px;height:200px"">
-								<textarea class="find-textarea" name="user.aboutMe" style="width:500px;height:180px"><s:property
+						<td colspan="4"><div style="width: 500px; height: 200px"">
+								<textarea class="find-textarea" name="user.aboutMe"
+									style="width: 500px; height: 180px"><s:property
 										value="#session.user.aboutMe" /> </textarea>
 							</div></td>
 					</tr>
@@ -99,7 +102,7 @@
 						<td colspan="3"><img
 							src="<s:property value="#session.user.photo"/>" height="150px"
 							width="250px"><input type="file" name="uploadFile"
-							onchange="fileChange(this)" / style="margin-bottom:20px;"></</td>
+							onchange="fileChange(this)" / style="margin-bottom: 20px;"></</td>
 					</tr>
 					<tr></tr>
 					<tr></tr>
