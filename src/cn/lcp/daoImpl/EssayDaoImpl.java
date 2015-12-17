@@ -13,19 +13,24 @@ import cn.lcp.dao.EssayDao;
 
 @Repository("essayDao")
 @Transactional(readOnly = false)
-public class EssayDaoImpl implements EssayDao{
-	
-	@Resource(name="hibernateTemplate")
-    private HibernateTemplate hibernateTemplate;
+public class EssayDaoImpl implements EssayDao {
+
+	@Resource(name = "hibernateTemplate")
+	private HibernateTemplate hibernateTemplate;
 
 	// 写入随笔
 	@Override
 	public void writeEssay(Blog blog) {
 		this.hibernateTemplate.save(blog);
 	}
-	
-	//查看所有的随笔
-	public List<Blog> getAllEssay(){
+
+	// 查看所有的随笔
+	public List<Blog> getAllEssay() {
 		return this.hibernateTemplate.find("from Blog");
+	}
+
+	// 查看随笔详情
+	public Blog seeDetails(int blogId) {
+		return (Blog) this.hibernateTemplate.find("from Blog where blogId = ?", blogId).get(0);
 	}
 }

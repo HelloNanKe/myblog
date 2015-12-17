@@ -111,26 +111,22 @@
 
 
 	<div class="bloglist left">
-		<s:iterator id="b" value="#session.blogList" status="u">
 			<div class="wz">
 				<h3>
-					题目：<s:property value='#b.theme' />
+					题目：<s:property value='#session.blog.theme' />
 				</h3>
 				<p class="dateview">
-					<span><s:property value='#b.date' /></span><span>作者：<s:property
+					<span><s:property value='#session.blog.date' /></span><span>作者：<s:property
 							value='#session.user.userName' /></span><span>
 					</span>
 				</p>
 				
 				<ul>
-					<s:property value='#b.content' escape="false"/>
-					<a title="阅读全文" href="seeDetails.action?blogId=<s:property value='#b.blogId'/>" target="_blank" class="readmore">阅读全文>></a>
-					<a title="阅读全文" href="#" target="_blank" class="readmore">删除</a>
+					<s:property value='#session.blog.content' escape="false"/>
+					<p>过来了啦</p>
 				</ul>
 				<div class="clear"></div>
 			</div>
-		</s:iterator>
-
 	</div>
 
 

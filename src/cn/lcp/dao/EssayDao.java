@@ -10,4 +10,6 @@ public interface EssayDao {
 	public void writeEssay(Blog blog);
 	//查看所有的随笔
 	public List<Blog> getAllEssay();
+	//查看随笔详情
+	public Blog seeDetails(int blogId);
 }

@@ -15,5 +15,9 @@
 		<action name="getAllEssay" method="getAllEssay" class="cn.lcp.action.EssayAction">
 			<result name="success">/home.jsp</result>
 		</action>
+		<!-- 查看详情 -->
+		<action name="seeDetails" method="seeDetails" class="cn.lcp.action.EssayAction">
+			<result name="success">/seeDetails.jsp</result>
+		</action>
 	</package>
 </struts>
