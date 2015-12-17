@@ -111,21 +111,29 @@
 
 
 	<div class="bloglist left">
+		<caption>
+			<label style="color: #ac2925">${msg}</label>
+		</caption>
 		<s:iterator id="b" value="#session.blogList" status="u">
+
 			<div class="wz">
 				<h3>
-					题目：<s:property value='#b.theme' />
+					题目：
+					<s:property value='#b.theme' />
 				</h3>
 				<p class="dateview">
 					<span><s:property value='#b.date' /></span><span>作者：<s:property
-							value='#session.user.userName' /></span><span>
-					</span>
+							value='#session.user.userName' /></span><span> </span>
 				</p>
-				
+
 				<ul>
-					<s:property value='#b.content' escape="false"/>
-					<a title="阅读全文" href="seeDetails.action?blogId=<s:property value='#b.blogId'/>" target="_blank" class="readmore">阅读全文>></a>
-					<a title="阅读全文" href="#" target="_blank" class="readmore">删除</a>
+					<s:property value='#b.content' escape="false" />
+					<a title="阅读全文"
+						href="seeDetails.action?blogId=<s:property value='#b.blogId'/>"
+						target="_blank" class="readmore">阅读全文>></a>
+					<a title="阅读全文"
+						href="delEssay.action?blogId=<s:property value='#b.blogId'/>"
+						class="readmore">删除</a>
 				</ul>
 				<div class="clear"></div>
 			</div>

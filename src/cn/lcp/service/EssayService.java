@@ -14,4 +14,7 @@ public interface EssayService {
 
 	// ²é¿´Ëæ±ÊÏêÇé
 	public Blog seeDetails(int blogId);
+
+	// É¾³ıËæ±Ê
+	public void delEssay(int blogId);
 }

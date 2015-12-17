@@ -12,4 +12,6 @@ public interface EssayDao {
 	public List<Blog> getAllEssay();
 	//²é¿´Ëæ±ÊÏêÇé
 	public Blog seeDetails(int blogId);
+	//É¾³ıËæ±Ê
+	public void delEssay(int blogId);
 }

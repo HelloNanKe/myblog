@@ -33,4 +33,9 @@ public class EssayDaoImpl implements EssayDao {
 	public Blog seeDetails(int blogId) {
 		return (Blog) this.hibernateTemplate.find("from Blog where blogId = ?", blogId).get(0);
 	}
+
+	// É¾³ýËæ±Ê
+	public void delEssay(int blogId){
+		this.hibernateTemplate.delete(this.hibernateTemplate.find("from Blog where blogId = ?", blogId).get(0));
+	}
 }

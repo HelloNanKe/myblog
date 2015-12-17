@@ -57,7 +57,7 @@ public class EssayAction extends ActionSupport {
 	}
 
 	// 查看所有的随笔
-	public String getAllEssay(){
+	public String getAllEssay() {
 		List<Blog> blogList = this.essayService.getAllEssay();
 		HttpSession session = ServletActionContext.getRequest().getSession();
 		session.setAttribute("blogList", blogList);
@@ -70,6 +70,15 @@ public class EssayAction extends ActionSupport {
 		int blogId =  Integer.parseInt(request.getParameter("blogId"));
 		Blog blog = this.essayService.seeDetails(blogId);
 		request.getSession().setAttribute("blog", blog);
+		return SUCCESS;
+	}
+
+	// 删除随笔
+	public String delEssay(){
+		HttpServletRequest request = ServletActionContext.getRequest();
+		int blogId =  Integer.parseInt(request.getParameter("blogId"));
+		this.essayService.delEssay(blogId);
+		request.setAttribute("msg", "删除成功");
 		return SUCCESS;
 	}
 }

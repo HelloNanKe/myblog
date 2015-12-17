@@ -19,5 +19,9 @@
 		<action name="seeDetails" method="seeDetails" class="cn.lcp.action.EssayAction">
 			<result name="success">/seeDetails.jsp</result>
 		</action>
+		<!-- 删除随笔 -->
+		<action name="delEssay" method="delEssay" class="cn.lcp.action.EssayAction">
+			<result name="success" type="chain">getAllEssay</result>
+		</action>
 	</package>
 </struts>

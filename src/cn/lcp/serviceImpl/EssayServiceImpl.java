@@ -32,12 +32,17 @@ public class EssayServiceImpl implements EssayService {
 	}
 
 	// 查看所有的随笔
-	public List<Blog> getAllEssay(){
+	public List<Blog> getAllEssay() {
 		return this.essayDao.getAllEssay();
 	}
 
 	// 查看随笔详情
 	public Blog seeDetails(int blogId){
 		return this.essayDao.seeDetails(blogId);
+	}
+
+	// 删除随笔
+	public void delEssay(int blogId){
+		this.essayDao.delEssay(blogId);
 	}
 }
