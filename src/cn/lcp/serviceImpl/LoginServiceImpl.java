@@ -13,6 +13,7 @@ import javax.annotation.Resource;
 public class LoginServiceImpl implements LoginService {
 	@Resource(name = "loginDao")
 	private LoginDao loginDao;
+	
 
 	// µÇÂ½
 	@Override

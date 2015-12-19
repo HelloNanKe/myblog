@@ -2,7 +2,7 @@ package cn.lcp.bean;
 
 import java.util.Date;
 
-public class Blog {
+public class Blog{
 	private int blogId;//博客id
 	private String theme;//随笔名字
 	private Date date;//随笔时间

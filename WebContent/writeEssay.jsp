@@ -30,8 +30,8 @@
 		class="en">Honme</span></a> <a href="about.jsp"><span>关于我</span><span
 		class="en">About</span></a> </a> <a href="saylist.html"><span>个人日记</span><span
 		class="en">Diary</span></a> <a href="seolist.html"><span>SEO技术</span><span
-		class="en">Seo</span></a> <a href="weblist.html"><span>WEB前端</span><span
-		class="en">Web</span></a> <a href="writeEssay.jsp"><span>随笔</span><span
+		class="en">Photo</span></a> <a href="photoWall.jsp"><span>照片墙</span><span
+		class="en">Photo</span></a> <a href="writeEssay.jsp"><span>随笔</span><span
 		class="en">Essay</span></a> </nav> </header>
 	<article class="blogs">
 	<h1 class="t_nav">
@@ -52,10 +52,15 @@
 							<td><input name="blog.theme" type="text" placeholder="随笔名字"
 								class="btn btn-default"></td>
 						</tr>
-						<tr><td></td></tr>
-						<tr><td></td></tr>
 						<tr>
-							<td style="position:relative;height:489px;width:1000px;"><textarea name="blog.content" style="height:320px"></textarea></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+						</tr>
+						<tr>
+							<td style="position: relative; height: 489px; width: 1000px;"><textarea
+									name="blog.content" style="height: 320px"></textarea></td>
 						</tr>
 						<tr>
 							<td><input class="btn btn-info" type="submit" value="Submit"></td>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.lcp.bean.Photo" table="photo">
+        <id name="photoId" type="java.lang.Integer">
+            <column name="photoId"/>
+            <generator class="increment"/>
+        </id>
+        <property name="photo" type="java.lang.String">
+            <column name="photo"></column>
+        </property>
+    </class>
+</hibernate-mapping>

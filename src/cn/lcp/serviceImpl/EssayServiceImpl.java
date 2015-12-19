@@ -17,14 +17,6 @@ public class EssayServiceImpl implements EssayService {
 	@Resource(name = "essayDao")
 	private EssayDao essayDao;
 
-	public EssayDao getEssayDao() {
-		return essayDao;
-	}
-
-	public void setEssayDao(EssayDao essayDao) {
-		this.essayDao = essayDao;
-	}
-
 	// Ð´ÈëËæ±Ê
 	@Override
 	public void writeEssay(Blog blog) {

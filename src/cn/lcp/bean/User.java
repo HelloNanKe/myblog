@@ -1,6 +1,8 @@
 package cn.lcp.bean;
 
-public class User {
+import java.io.Serializable;
+
+public class User{
     private String loginId;//µÇÂ½id	
     private String userName;//ÓÃ»§Ãû
     private String passwd;//ÃÜÂë

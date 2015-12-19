@@ -14,9 +14,10 @@
         <property name="format_sql">true</property>
         <property name="myeclipse.connection.profile">mysql</property>
         <property name="hbm2ddl.auto">update</property>
-
+		<property name="hiberante.cache.use_second_level_cache">false</property><!-- //关闭二级缓存    -->
         <!--添加多条映射文件-->
         <mapping resource="cn/lcp/bean/User.hbm.xml"></mapping>
         <mapping resource="cn/lcp/bean/Blog.hbm.xml"></mapping>
+        <mapping resource="cn/lcp/bean/Photo.hbm.xml"></mapping>
     </session-factory>
 </hibernate-configuration>

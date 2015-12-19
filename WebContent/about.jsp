@@ -25,8 +25,8 @@
 		class="en">Home</span></a> <a href="about.jsp"><span>关于我</span><span
 		class="en">About</span></a> <a href="saylist.html"><span>个人日记</span><span
 		class="en">Diary</span></a> <a href="seolist.html"><span>SEO技术</span><span
-		class="en">Seo</span></a> <a href="weblist.html"><span>WEB前端</span><span
-		class="en">Web</span></a> <a href="writeEssay.jsp"><span>随笔</span><span
+		class="en">Seo</span></a> <a href="photoWall.jsp"><span>照片墙</span><span
+		class="en">Photo</span></a> <a href="writeEssay.jsp"><span>随笔</span><span
 		class="en">Essay</span></a> </nav> </header>
 	<article class="aboutcon">
 	<h1 class="t_nav">

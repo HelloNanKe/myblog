@@ -10,7 +10,7 @@
     <!--包含多个struts的配置文件-->
     <include file="struts/struts-login.xml"/>
     <include file="struts/struts-essay.xml"/>
-
+	<include file="struts/struts-photo.xml"></include>
     <package name="base-struts" extends="struts-default">
         <interceptors>
             <!--拦截器-->
