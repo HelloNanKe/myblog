@@ -71,7 +71,7 @@ public class photoUploadAction extends ActionSupport {
 
 				photo.add(filename);
 				HttpSession session = ServletActionContext.getRequest().getSession();
-				session.setAttribute("msg", "上传成功");
+				session.setAttribute("msg4", "上传成功");
 			}
 			this.photoService.photoUpload(photo);
 		}

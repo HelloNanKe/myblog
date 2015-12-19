@@ -110,7 +110,7 @@
 
 	<div class="bloglist left">
 		<caption>
-			<label style="color: #ac2925">${msg}</label>
+			<label style="color: #ac2925">${msg2}</label>
 		</caption>
 		<s:iterator id="b" value="#session.blogList" status="u">
 
@@ -125,7 +125,7 @@
 				</p>
 
 				<ul>
-					<s:property value='#b.content' escape="false" />
+					<div style=" width:600px; height:50px; line-height:25px; overflow:hidden"><s:property value='#b.content' escape="false" /></div>
 					<a title="阅读全文"
 						href="seeDetails.action?blogId=<s:property value='#b.blogId'/>"
 						target="_blank" class="readmore">阅读全文>></a>

@@ -58,7 +58,7 @@
 				<form action="photoUpload" enctype="multipart/form-data"
 					method="post">
 					<caption>
-						<label style="color: #ac2925">${msg}</label>
+						<label style="color: #ac2925">${msg4}</label>
 					</caption>
 					<input id="file-0a" class="file" type="file" multiple
 						data-min-file-count="1" name="Filedata"> <br>

@@ -91,10 +91,10 @@ public class loginAction extends ActionSupport {
 			user.setPhoto(filename);
 			User usernew = this.loginService.modifyAbout(user);
 			session.setAttribute("user", usernew);
-			ServletActionContext.getRequest().setAttribute("msg", "修改成功");
+			ServletActionContext.getRequest().setAttribute("msg3", "修改成功");
 			return SUCCESS;
 		}else{
-			ServletActionContext.getRequest().setAttribute("msg", "修改失败");
+			ServletActionContext.getRequest().setAttribute("msg3", "修改失败");
 			return ERROR;
 		}
 		

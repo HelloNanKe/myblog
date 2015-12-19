@@ -38,7 +38,7 @@
 				enctype="multipart/form-data">
 				<table cellpadding="0" cellspacing="0">
 					<caption>
-						<label style="color: #ac2925">${msg}</label>
+						<label style="color: #ac2925">${msg3}</label>
 					</caption>
 
 					<tr>

@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	   xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
-	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
                            http://www.springframework.org/schema/context 
                            http://www.springframework.org/schema/context/spring-context-2.5.xsd
                            http://www.springframework.org/schema/tx 
                            http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
 
-	<!-- 导入类扫描的注解解析器和事务的注解解析器 -->
+	<!--
+	 xmlns="http://www.springframework.org/schema/beans" 
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"     这两个最基本的命名空间定义
+	 xmlns:context="http://www.springframework.org/schema/context"  启动自动扫描或注解装配时的命名空间
+	 xmlns:tx="http://www.springframework.org/schema/tx"   启动声明事务时的命名空间
+	 xmlns:aop="http://www.springframework.org/schema/aop"  启动aop功能时的命名空间
+	 xsi:schemaLocation  与上述命名空间定义配套的schema定义文件的装配路径
+	 -->
+
+	<!-- <context:annotation-config/> 开启注解处理器 -->
+	<!-- <aop:aspectj-autoproxy/> 开启基于Aspectj切面的注解处理器  -->
+	
+	<!-- 开启组建自动扫描，扫描路径有base-package指定 -->
 	<context:component-scan base-package="cn.lcp"></context:component-scan>
 	<tx:annotation-driven transaction-manager="transactionManager" />
 	<bean id="transactionManager"

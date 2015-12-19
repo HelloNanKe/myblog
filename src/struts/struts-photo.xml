@@ -9,7 +9,7 @@
 		<!-- 上传照片 -->
 		<action name="photoUpload" method="photoUpload"
 			class="cn.lcp.action.photoUploadAction">
-			<result name="success" type="chain">"getAllPhoto"</result>
+			<result name="success" type="chain">getAllPhoto</result>
 		</action>
 
 		<!-- 显示照片照片 -->

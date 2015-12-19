@@ -78,7 +78,7 @@ public class EssayAction extends ActionSupport {
 		HttpServletRequest request = ServletActionContext.getRequest();
 		int blogId =  Integer.parseInt(request.getParameter("blogId"));
 		this.essayService.delEssay(blogId);
-		request.setAttribute("msg", "删除成功");
+		request.setAttribute("msg2", "删除成功");
 		return SUCCESS;
 	}
 }
