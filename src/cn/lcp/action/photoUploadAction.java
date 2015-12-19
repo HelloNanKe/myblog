@@ -6,7 +6,9 @@ import java.util.Date;
 import java.util.List;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 
+import org.apache.struts2.ServletActionContext;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
@@ -67,7 +69,8 @@ public class photoUploadAction extends ActionSupport {
 				String filename = imgCom.resize(130, 150, date.toString(), this.getFiledataFileName().get(i));
 
 				photo.add(filename);
-				System.out.println(filename);
+				HttpSession session = ServletActionContext.getRequest().getSession();
+				session.setAttribute("msg", "上传成功");
 			}
 			this.photoService.photoUpload(photo);
 		}

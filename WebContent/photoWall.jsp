@@ -59,6 +59,9 @@
 			<div>
 				<form action="photoUpload" enctype="multipart/form-data"
 					method="post">
+					<caption>
+						<label style="color: #ac2925">${msg}</label>
+					</caption>
 					<input id="file-0a" class="file" type="file" multiple
 						data-min-file-count="1" name="Filedata"> <br>
 					<button type="submit" class="btn btn-primary">Submit</button>

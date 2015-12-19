@@ -8,7 +8,7 @@
 	<package name="photo" extends="struts-default">
 		<!-- 上传照片 -->
 		<action name="photoUpload" method="photoUpload" class="cn.lcp.action.photoUploadAction">
-			<result name="success">/ok.jsp</result>
+			<result name="success">/photoWall.jsp</result>
 		</action>
 	</package>
 </struts>
