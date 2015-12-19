@@ -40,19 +40,17 @@
 <body>
 	<header>
 	<div id="logo">
-		<a href="/"></a>
+		<a href="#"></a>
 	</div>
-	<nav class="topnav" id="topnav"> <a href="home.jsp"><span>首页</span><span
-		class="en">Honme</span></a> <a href="about.jsp"><span>关于我</span><span
-		class="en">About</span></a> </a> <a href="saylist.html"><span>个人日记</span><span
-		class="en">Diary</span></a> <a href="seolist.html"><span>SEO技术</span><span
-		class="en">Photo</span></a> <a href="photoWall.jsp"><span>照片墙</span><span
+	<nav class="topnav" id="topnav"> <a href="getAllEssay"><span>首页</span><span
+		class="en">Home</span></a> <a href="about.jsp"><span>关于我</span><span
+		class="en">About</span></a> <a href="getAllPhoto"><span>照片墙</span><span
 		class="en">Photo</span></a> <a href="writeEssay.jsp"><span>随笔</span><span
 		class="en">Essay</span></a> </nav> </header>
 	<article class="blogs">
 	<h1 class="t_nav">
-		<span>web前端包括html、css、javascript的技术</span><a href="/" class="n1">网站首页</a><a
-			href="/" class="n2">Web前端</a>
+		<span>关于自己的回忆</span><a href="#" class="n1">网站首页</a><a
+			href="#" class="n2">照片墙</a>
 	</h1>
 	<div>
 		<div class="xc_content">
@@ -73,74 +71,11 @@
 				<div class="w960 mt_10">
 					<div class="w650">
 						<ul class="tips" id="wf-main" style="display: none">
-							<li class="wf-cld"><img src="images/photo/8.jpg" width="200"
-								height="178" alt="" /></li>
-							<li class="wf-cld"><img src="images/photo/1.jpg"
-								height="147" width="200" alt="" /></li>
-							<li class="wf-cld"><img src="images/photo/2.jpg" width="200"
-								height="267" alt="" /></li>
-							<li class="wf-cld"><img src="images/photo/3.jpg" width="200"
-								height="125" alt="" /></li>
-							<li class="wf-cld"><img src="images/photo/4.jpg" width="200"
-								height="299" alt="" /></li>
-							<li class="wf-cld"><img src="images/photo/5.jpg" width="200"
-								height="125" alt="" /></li>
-							<li class="wf-cld"><img src="images/photo/6.jpg" width="200"
-								height="267" alt="" /></li>
-							<li class="wf-cld"><img src="images/photo/7.jpg" width="200"
-								height="135" alt="" /></li>
-							<li class="wf-cld"><img src="images/photo/9.jpg" width="200"
-								height="300" alt="" /></li>
-							<li class="wf-cld"><img src="images/photo/10.jpg"
-								width="200" height="107" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/8.jpg" width="200" height="178" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/1.jpg" height="147" width="200" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/2.jpg" width="200" height="267" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/3.jpg" width="200" height="125" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/4.jpg" width="200" height="299" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/5.jpg" width="200" height="125" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/6.jpg" width="200" height="267" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/7.jpg" width="200" height="135" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/9.jpg" width="200" height="300" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/10.jpg" width="200" height="107" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/2.jpg" width="200" height="267" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/3.jpg" width="200" height="125" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/8.jpg" width="200" height="178" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/1.jpg" height="147" width="200" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/2.jpg" width="200" height="267" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/3.jpg" width="200" height="125" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/4.jpg" width="200" height="299" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/5.jpg" width="200" height="125" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/6.jpg" width="200" height="267" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/7.jpg" width="200" height="135" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/9.jpg" width="200" height="300" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/10.jpg" width="200" height="107" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/2.jpg" width="200" height="267" alt="" /></li>
-							<li class="wf-cld"><img rel="lazy"
-								lazy_src="images/photo/3.jpg" width="200" height="125" alt="" /></li>
+							<s:iterator id="lp" value="#session.listPhoto">
+								<li class="wf-cld"><img
+									src="<s:property value='#lp.photo'/>" width="200" height="178"
+									alt="" rel="lazy" /></li>
+							</s:iterator>
 						</ul>
 					</div>
 				</div>

@@ -19,19 +19,17 @@
 <body>
 	<header>
 	<div id="logo">
-		<a href="/"></a>
+		<a href="#"></a>
 	</div>
-	<nav class="topnav" id="topnav"> <a href="home.jsp"><span>首页</span><span
+	<nav class="topnav" id="topnav"> <a href="getAllEssay"><span>首页</span><span
 		class="en">Home</span></a> <a href="about.jsp"><span>关于我</span><span
-		class="en">About</span></a> <a href="saylist.html"><span>个人日记</span><span
-		class="en">Diary</span></a> <a href="seolist.html"><span>SEO技术</span><span
-		class="en">Seo</span></a> <a href="photoWall.jsp"><span>照片墙</span><span
+		class="en">About</span></a> <a href="getAllPhoto"><span>照片墙</span><span
 		class="en">Photo</span></a> <a href="writeEssay.jsp"><span>随笔</span><span
 		class="en">Essay</span></a> </nav> </header>
 	<article class="aboutcon">
 	<h1 class="t_nav">
-		<span>像"草根"一样，紧贴着地面，低调的存在，冬去春来，枯荣无恙。</span><a href="/" class="n1">网站首页</a><a
-			href="/" class="n2">关于我</a>
+		<span>像"草根"一样，紧贴着地面，低调的存在，冬去春来，枯荣无恙。</span><a href="#" class="n1">网站首页</a><a
+			href="#" class="n2">关于我</a>
 	</h1>
 	<div class="about left">
 		<h2>About me</h2>
@@ -147,13 +145,7 @@
 		</div>
 	</div>
 	</aside> </article>
-	<footer>
-	<p>
-		<span>Design By:<a href="www.duanliang920.com" target="_blank"><s:property
-					value="#session.user.netName" /></a></span><span>网站地图</span><span><a
-			href="/">网站统计</a></span>
-	</p>
-	</footer>
+
 	<script src="js/nav.js"></script>
 </body>
 </html>

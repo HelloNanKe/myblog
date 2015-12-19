@@ -57,6 +57,7 @@ public class photoUploadAction extends ActionSupport {
 		FiledataContentType = filedataContentType;
 	}
 
+	//…œ¥´Õº∆¨
 	public String photoUpload() throws Exception {
 		if (Filedata.size() != 0) {
 			List<String> photo = new ArrayList<String>();
@@ -74,6 +75,14 @@ public class photoUploadAction extends ActionSupport {
 			}
 			this.photoService.photoUpload(photo);
 		}
+		return "success";
+	}
+	
+	// œ‘ æ’’∆¨
+	public String getAllPhoto(){
+		HttpSession session = ServletActionContext.getRequest().getSession();
+		List<Photo> listPhoto = this.photoService.getAllPhoto();
+		session.setAttribute("listPhoto", listPhoto);
 		return "success";
 	}
 }

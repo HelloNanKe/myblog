@@ -21,4 +21,9 @@ public class PhotoServiceImpl implements PhotoService {
 	public void photoUpload(List<String> photo) {
 		this.photoDao.photoUpload(photo);
 	}
+
+	// œ‘ æ’’∆¨
+	public List<Photo> getAllPhoto(){
+		return this.photoDao.getAllPhoto();
+	}
 }

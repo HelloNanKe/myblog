@@ -78,21 +78,19 @@
 <body>
 	<header>
 	<div id="logo">
-		<a href="/"></a>
+		<a href="#"></a>
 	</div>
 	<nav class="topnav" id="topnav"> <a href="getAllEssay"><span>首页</span><span
-		class="en">Honme</span></a> <a href="about.jsp"><span>关于我</span><span
-		class="en">About</span></a> </a> <a href="saylist.html"><span>个人日记</span><span
-		class="en">Diary</span></a> <a href="seolist.html"><span>SEO技术</span><span
-		class="en">Seo</span></a> <a href="photoWall.jsp"><span>照片墙</span><span
+		class="en">Home</span></a> <a href="about.jsp"><span>关于我</span><span
+		class="en">About</span></a> <a href="getAllPhoto"><span>照片墙</span><span
 		class="en">Photo</span></a> <a href="writeEssay.jsp"><span>随笔</span><span
 		class="en">Essay</span></a> </nav> </header>
 	<!--end header-->
 	<div class="banner">
 		<section class="box">
 		<ul class="texts">
-			<p class="p1">纪念我们:</p>
-			<p class="p2">终将逝去的青春</p>
+			<p class="p1">关于自己的:</p>
+			<p class="p2">青o(^▽^)o春</p>
 			<p class="p3">
 				By:
 				<s:property value='#session.user.userName' />

@@ -24,19 +24,17 @@
 <body>
 	<header>
 	<div id="logo">
-		<a href="/"></a>
+		<a href="#"></a>
 	</div>
-	<nav class="topnav" id="topnav"> <a href="home.jsp"><span>首页</span><span
-		class="en">Honme</span></a> <a href="about.jsp"><span>关于我</span><span
-		class="en">About</span></a> </a> <a href="saylist.html"><span>个人日记</span><span
-		class="en">Diary</span></a> <a href="seolist.html"><span>SEO技术</span><span
-		class="en">Photo</span></a> <a href="photoWall.jsp"><span>照片墙</span><span
+	<nav class="topnav" id="topnav"> <a href="getAllEssay"><span>首页</span><span
+		class="en">Home</span></a> <a href="about.jsp"><span>关于我</span><span
+		class="en">About</span></a> <a href="getAllPhoto"><span>照片墙</span><span
 		class="en">Photo</span></a> <a href="writeEssay.jsp"><span>随笔</span><span
-		class="en">Essay</span></a> </nav> </header>
+		class="en">Essay</span></a> </nav></header>
 	<article class="blogs">
 	<h1 class="t_nav">
-		<span>既然来了，那么就留下你的足迹吧！</span><a href="/" class="n1">网站首页</a><a
-			href="/" class="n2">随笔</a>
+		<span>既然来了，那么就留下你的足迹吧！</span><a href="#" class="n1">网站首页</a><a
+			href="#" class="n2">随笔</a>
 	</h1>
 	<div class="bloglist left">
 		<div id="gustbook">
@@ -79,12 +77,7 @@
 
 
 	</aside> </article>
-	<footer>
-	<p>
-		<span>Design By:<a href="#" target="_blank">段亮</a></span><span>网站地图</span><span><a
-			href="/">网站统计</a></span>
-	</p>
-	</footer>
+	
 	<script src="js/nav.js"></script>
 	<!-- Baidu Button BEGIN -->
 

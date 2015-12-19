@@ -42,4 +42,9 @@ public class PhotoDaoImpl implements PhotoDao {
 		session.close();
 	}
 
+	// œ‘ æ’’∆¨
+	public List<Photo> getAllPhoto(){
+		return this.hibernateTemplate.find("from Photo");
+	}
+
 }
