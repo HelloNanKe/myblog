@@ -11,7 +11,7 @@
 <body>
 	<div class="main">
 		<div class="login-form">
-			<h1>Library Login</h1>
+			<h1>Login</h1>
 			<div class="head">
 				<img src="img/user.png" alt="" />
 			</div>

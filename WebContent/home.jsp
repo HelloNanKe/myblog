@@ -5,8 +5,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>个人博客</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>个人博客</title>
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
 <link href="css/user_info.css" rel="stylesheet">
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
